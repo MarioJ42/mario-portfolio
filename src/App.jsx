@@ -17,7 +17,7 @@ import {
   ChevronRight,
   Maximize2,
 } from "lucide-react";
-import profileImg from "./assets/EDS00522 square.jpg";
+import profileImg from "./assets/EDS00522-square.jpg";
 
 const NAV_LINKS = [
   { id: "about", label: "About" },
