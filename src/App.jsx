@@ -53,7 +53,7 @@ const EXPERIENCE = [
     ],
   },
   {
-    role: "Senior Digital Marketing Assistant",
+    role: "Senior Digital Marketing Assistant - Contract",
     org: "iSTTS",
     dates: "May 2023 — Jun 2025",
     points: [
@@ -63,26 +63,26 @@ const EXPERIENCE = [
       "Conducted direct promotional presentations at various high schools.",
     ],
   },
-  {
-    role: "Core Team — Freelance",
-    org: "Exquisite Organizer",
-    dates: "May 2025 — Present",
-    points: [
-      "Directed morning event operations as Groom In-Charge and managed Front of House duties for evening sessions.",
-      "Worked efficiently within assigned roles while proactively backing up on-site crew as needed.",
-      "Delivered rapid, effective problem-solving with clients and vendors.",
-    ],
-  },
-  {
-    role: "Core Team — Freelance",
-    org: "Fenix Event Organizer",
-    dates: "Nov 2022 — May 2026",
-    points: [
-      "Executed core duties as Groom In-Charge for morning sessions and managed Front of House operations for evening sessions.",
-      "Adapted quickly to on-site role rotations: VIP family, runner, layout, and backstage management.",
-      "Proactively coordinated with internal crew, vendors, and clients for seamless execution.",
-    ],
-  },
+  // {
+  //   role: "Core Team — Freelance",
+  //   org: "Exquisite Organizer",
+  //   dates: "May 2025 — Present",
+  //   points: [
+  //     "Directed morning event operations as Groom In-Charge and managed Front of House duties for evening sessions.",
+  //     "Worked efficiently within assigned roles while proactively backing up on-site crew as needed.",
+  //     "Delivered rapid, effective problem-solving with clients and vendors.",
+  //   ],
+  // },
+  // {
+  //   role: "Core Team — Freelance",
+  //   org: "Fenix Event Organizer",
+  //   dates: "Nov 2022 — May 2026",
+  //   points: [
+  //     "Executed core duties as Groom In-Charge for morning sessions and managed Front of House operations for evening sessions.",
+  //     "Adapted quickly to on-site role rotations: VIP family, runner, layout, and backstage management.",
+  //     "Proactively coordinated with internal crew, vendors, and clients for seamless execution.",
+  //   ],
+  // },
   {
     role: "Public Relations — Contract",
     org: "Google Developer Student Club",
@@ -171,7 +171,7 @@ const CERTIFICATIONS = [
 
 const SKILL_GROUPS = [
   {
-    label: "Languages",
+    label: "Programming Languages",
     tone: "teal",
     items: ["PHP", "Python", "JavaScript", "TypeScript", "Java", "Kotlin", "HTML", "CSS"],
   },
@@ -195,15 +195,28 @@ const SKILL_GROUPS = [
     ],
   },
   {
-    label: "Creative & Live Event Tools",
-    tone: "fuchsia",
-    items: ["Adobe Premiere Pro", "CapCut", "MS Clipchamp", "Virtual DJ", "OBS", "vMix", "Resolume"],
+    label: "APIs, Integrations & Architecture",
+    tone: "teal",
+    items: [
+      "Middleware",
+      "Midtrans Payment",
+      "SMTP Mail Services",
+      "Access Control",
+      "Google Maps API",
+      "RajaOngkir API",
+      "Fontee WhatsApp API",
+    ],
   },
   {
-    label: "On-Site & Collaboration",
+    label: "Creative & Live Event Tools",
     tone: "fuchsia",
-    items: ["Event Operations", "Vendor Coordination", "Public Speaking", "Sponsorship Pitching"],
+    items: ["vMix", "OBS", "Resolume", "Virtual DJ", "Adobe Premiere Pro", "MS Clipchamp", "CapCut"],
   },
+  // {
+  //   label: "On-Site & Collaboration",
+  //   tone: "fuchsia",
+  //   items: ["Event Operations", "Vendor Coordination", "Public Speaking", "Sponsorship Pitching"],
+  // },
 ];
 
 const toneClasses = {
@@ -415,12 +428,13 @@ export default function App() {
                 Mario Joseph
               </h1>
               <p className="mt-4 max-w-xl font-mono text-lg text-teal-400 sm:text-xl">
-                Full Stack Developer <span className="text-zinc-600">/</span>{" "}
-                <span className="text-fuchsia-300">Live Event Operator</span>
+                Full Stack Developer 
+                {/* <span className="text-zinc-600">/</span>{" "} */}
+                {/* <span className="text-fuchsia-300">Live Event Operator</span> */}
               </p>
               <p className="mt-6 max-w-xl text-base leading-relaxed text-zinc-400">
                 Business Information Systems graduate from iSTTS, architecting software systems
-                during the weekdays while executing live event operations on weekends.
+                during the weekdays while executing live event on weekends.
               </p>
 
               <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -481,14 +495,13 @@ export default function App() {
               <p className="max-w-2xl text-base leading-relaxed text-zinc-400">
                 I'm a Business Information Systems graduate specializing in Enterprise
                 Information Systems at Institut Sains &amp; Teknologi Terpadu Surabaya (iSTTS).
-                Across two full-stack internships, I've built internal portals and
-                vendor management systems from the database up, designing schemas,
+                Across two full-stack internships, I've developt internal portal for company and
+                vendor management systems from the database, designing schemas,
                 integrating them into existing infrastructure, and presenting the results
                 to the users.
               </p>
               <p className="mt-4 max-w-2xl text-base leading-relaxed text-zinc-400">
-                Outside the codebase, I've spent over three years on event crews. Operating
-                Front of House, coordinating vendors, and pitching sponsorships. I'm
+                Outside the codebase, I've spent over three years on event industries. I'm
                 aiming for a career at the intersection of technology and the creative
                 industry, where both sides of that experience are useful at once.
               </p>
@@ -496,7 +509,7 @@ export default function App() {
             <div className="space-y-4 rounded-lg border border-zinc-800 bg-zinc-900/40 p-5">
               <div className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-teal-400" />
-                <span className="text-sm text-zinc-400">Surabaya, East Java 60283</span>
+                <span className="text-sm text-zinc-400">Surabaya, East Java</span>
               </div>
               <div className="flex items-start gap-3">
                 <Mail className="mt-0.5 h-4 w-4 shrink-0 text-teal-400" />
@@ -521,7 +534,7 @@ export default function App() {
             {EXPERIENCE.map((job, i) => (
               <div key={i} className="relative">
                 <span className="absolute -left-[2.05rem] top-1.5 h-2.5 w-2.5 rounded-full border-2 border-zinc-950 bg-teal-400" />
-                <p className="font-mono text-xs text-zinc-500">{job.dates}</p>
+                <p className="font-mono text-xs text-teal-500">{job.dates}</p>
                 <h3 className="mt-1 text-lg font-semibold text-zinc-100">{job.role}</h3>
                 <p className="flex items-center gap-2 text-sm text-fuchsia-300">
                   <Briefcase className="h-3.5 w-3.5" />
