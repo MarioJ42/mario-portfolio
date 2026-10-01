@@ -101,7 +101,12 @@ const PROJECTS = [
     description:
       "A division-based internal portal for managing store promotions, built with custom database architecture and integrated into existing corporate infrastructure.",
     tags: ["Laravel", "PHP", "MySQL", "Access Control", "SMTP Mail Services"],
-    images: [],
+    images: [
+      "/assets/projects/yoshinoya1.png",
+      "/assets/projects/yoshinoya2.png",
+      "/assets/projects/yoshinoya3.png",
+      "/assets/projects/yoshinoya4.png",
+    ],
   },
   {
     title: "Vendor Management & Digital RSVP System",
